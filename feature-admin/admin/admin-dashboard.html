@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Library Portal</title>
+
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="logo-icon">
+                    📚
+                </div>
+
+                <div>
+                    <h2>Athenaeum</h2>
+                    <span>LIBRARY PORTAL</span>
+                </div>
+
+            </div>
+
+
+            <!-- Admin Profile -->
+
+            <div class="admin-profile">
+
+                <div class="profile-avatar">
+                    A
+                </div>
+
+                <div class="profile-info">
+                    <h3>Admin</h3>
+                    <p>Administrator</p>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-nav">
+
+                <p class="nav-title">MAIN MENU</p>
+
+                <a href="#" class="nav-link active">
+                    <span class="nav-icon">▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">👥</span>
+                    <span>Members</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">📚</span>
+                    <span>Books</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">🔄</span>
+                    <span>Issue / Return</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">▤</span>
+                    <span>Categories</span>
+                </a>
+
+
+                <p class="nav-title management-title">MANAGEMENT</p>
+
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">📊</span>
+                    <span>Reports</span>
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+
+            <div class="sidebar-footer">
+
+                <a href="../../feature-login/login/login.html" class="logout-link">
+                    <span class="nav-icon">↪</span>
+                    <span>Logout</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+
+            <!-- Top Header -->
+
+            <header class="top-header">
+
+                <div>
+
+                    <p class="page-label">
+                        LIBRARY MANAGEMENT
+                    </p>
+
+                    <h1>
+                        Admin Dashboard
+                    </h1>
+
+                </div>
+
+
+                <div class="header-right">
+
+                    <div class="date-box">
+                        <span class="date-icon">◷</span>
+                        <span>Library Administration</span>
+                    </div>
+
+                    <div class="header-avatar">
+                        A
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- ================= WELCOME ================= -->
+
+            <section class="welcome-section">
+
+                <div>
+
+                    <p class="welcome-small">
+                        WELCOME BACK
+                    </p>
+
+                    <h2>
+                        Welcome, Admin
+                    </h2>
+
+                    <p>
+                        Manage your library resources and activities
+                        from one place.
+                    </p>
+
+                </div>
+
+                <div class="welcome-icon">
+                    📖
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= STATISTICS ================= -->
+
+            <section class="stats-grid">
+
+
+                <!-- Total Members -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon members-icon">
+                        👥
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>
+                            Total Members
+                        </p>
+
+                        <h2>
+                            0
+                        </h2>
+
+                        <span>
+                            No members added yet
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Total Books -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon books-icon">
+                        📚
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>
+                            Total Books
+                        </p>
+
+                        <h2>
+                            0
+                        </h2>
+
+                        <span>
+                            No books added yet
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Available Books -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon available-icon">
+                        ✓
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>
+                            Available Books
+                        </p>
+
+                        <h2>
+                            0
+                        </h2>
+
+                        <span>
+                            No books available
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Issued Books -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon issued-icon">
+                        🔄
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>
+                            Issued Books
+                        </p>
+
+                        <h2>
+                            0
+                        </h2>
+
+                        <span>
+                            No active issues
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Pending Returns -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon pending-icon">
+                        ⏱
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>
+                            Pending Returns
+                        </p>
+
+                        <h2>
+                            0
+                        </h2>
+
+                        <span>
+                            No pending returns
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Pending Fine -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon fine-icon">
+                        ₹
+                    </div>
+
+                    <div class="stat-content">
+
+                        <p>
+                            Pending Fine
+                        </p>
+
+                        <h2>
+                            ₹0
+                        </h2>
+
+                        <span>
+                            No pending fine
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= DASHBOARD GRID ================= -->
+
+            <section class="dashboard-grid">
+
+
+                <!-- Recent Activity -->
+
+                <div class="dashboard-card activity-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2>
+                                Recent Activity
+                            </h2>
+
+                            <p>
+                                Latest library activities
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            📋
+                        </div>
+
+                        <h3>
+                            No recent activity
+                        </h3>
+
+                        <p>
+                            Library activity will appear here
+                            once books or members are added.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Quick Actions -->
+
+                <div class="dashboard-card quick-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2>
+                                Quick Actions
+                            </h2>
+
+                            <p>
+                                Frequently used options
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-actions">
+
+
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-icon">
+                                👥
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Manage Members
+                                </h3>
+
+                                <p>
+                                    View and manage members
+                                </p>
+
+                            </div>
+
+                            <span class="arrow">
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-icon">
+                                📚
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Manage Books
+                                </h3>
+
+                                <p>
+                                    Add or manage books
+                                </p>
+
+                            </div>
+
+                            <span class="arrow">
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-icon">
+                                🔄
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Issue / Return
+                                </h3>
+
+                                <p>
+                                    Manage book transactions
+                                </p>
+
+                            </div>
+
+                            <span class="arrow">
+                                →
+                            </span>
+
+                        </a>
+
+
+
+                        <a href="#" class="quick-action">
+
+                            <div class="quick-icon">
+                                📊
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    View Reports
+                                </h3>
+
+                                <p>
+                                    View library reports
+                                </p>
+
+                            </div>
+
+                            <span class="arrow">
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= EMPTY STATUS ================= -->
+
+            <section class="bottom-grid">
+
+
+                <!-- Library Status -->
+
+                <div class="dashboard-card status-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2>
+                                Library Status
+                            </h2>
+
+                            <p>
+                                Current library overview
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="empty-status">
+
+                        <div class="status-empty-icon">
+                            📚
+                        </div>
+
+                        <p>
+                            No library data available yet.
+                        </p>
+
+                        <span>
+                            Add books and members to see
+                            library statistics here.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- System Information -->
+
+                <div class="dashboard-card system-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <h2>
+                                System Information
+                            </h2>
+
+                            <p>
+                                Current portal information
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span>
+                            Portal
+                        </span>
+
+                        <strong>
+                            Athenaeum Library
+                        </strong>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span>
+                            Access
+                        </span>
+
+                        <strong>
+                            Administrator
+                        </strong>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span>
+                            Books
+                        </span>
+
+                        <strong>
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span>
+                            Members
+                        </span>
+
+                        <strong>
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="system-item">
+
+                        <span>
+                            System Status
+                        </span>
+
+                        <strong class="online-status">
+                            ● Active
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Footer -->
+
+            <footer class="dashboard-footer">
+
+                <p>
+                    © 2026 Athenaeum Library |
+                    Library & Digital Resource Management System
+                </p>
+
+                <span>
+                    Admin Panel
+                </span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
