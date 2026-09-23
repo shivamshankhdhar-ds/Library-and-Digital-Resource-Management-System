@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Library Portal</title>
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <main class="register-page">
+
+        <div class="register-card">
+
+            <!-- Header -->
+            <div class="card-header">
+
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="9" cy="8" r="4"
+                            stroke="currentColor"
+                            stroke-width="1.7"/>
+
+                        <path d="M3 21C3 17.69 5.69 15 9 15"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"/>
+
+                        <path d="M19 8V14M16 11H22"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <span class="portal-label">LIBRARY PORTAL</span>
+                    <h1>Create Account</h1>
+                    <p>Register as a student</p>
+                </div>
+
+            </div>
+
+
+            <!-- Registration Form -->
+                <form action="../account-created/account-created.html" method="get">
+                <!-- Full Name -->
+                <div class="input-group">
+
+                    <label for="full-name">Full Name</label>
+
+                    <div class="input-wrapper">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="8" r="4"
+                                stroke="currentColor"
+                                stroke-width="1.7"/>
+
+                            <path d="M4 21C4 17.69 7.58 15 12 15C16.42 15 20 17.69 20 21"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"/>
+                        </svg>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full-name"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Enrollment ID -->
+                <div class="input-group">
+
+                    <label for="enrollment-id">Enrollment ID</label>
+
+                    <div class="input-wrapper">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="4" width="16" height="16" rx="2"
+                                stroke="currentColor"
+                                stroke-width="1.7"/>
+
+                            <path d="M8 8H16M8 12H13M8 16H11"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"/>
+                        </svg>
+
+                        <input
+                            type="text"
+                            id="enrollment-id"
+                            name="enrollment-id"
+                            placeholder="Enter your enrollment ID"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- College Email -->
+                <div class="input-group">
+
+                    <label for="email">College Email</label>
+
+                    <div class="input-wrapper">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="5" width="18" height="14" rx="2"
+                                stroke="currentColor"
+                                stroke-width="1.7"/>
+
+                            <path d="M4 7L12 13L20 7"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your college email"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-group">
+
+                    <label for="password">Password</label>
+
+                    <div class="input-wrapper">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="10" width="16" height="11" rx="2"
+                                stroke="currentColor"
+                                stroke-width="1.7"/>
+
+                            <path d="M8 10V7C8 4.79 9.79 3 12 3C14.21 3 16 4.79 16 7V10"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"/>
+                        </svg>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+
+                    <label for="confirm-password">Confirm Password</label>
+
+                    <div class="input-wrapper">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="10" width="16" height="11" rx="2"
+                                stroke="currentColor"
+                                stroke-width="1.7"/>
+
+                            <path d="M8 10V7C8 4.79 9.79 3 12 3C14.21 3 16 4.79 16 7V10"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"/>
+
+                            <path d="M9 15L11 17L15 13"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Confirm your password"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms and Privacy -->
+                <div class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required>
+
+                    <label for="terms">
+                        I agree to the Library
+                        <a href="#">Terms &amp; Conditions</a>
+                        and
+                        <a href="#">Privacy Policy</a>.
+                    </label>
+
+                </div>
+
+
+                <!-- Create Account Button -->
+                <button type="submit" class="create-btn">
+
+                    Create Account
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"/>
+
+                        <path d="M13 6L19 12L13 18"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </button>
+
+            </form>
+
+
+            <!-- Back to Login -->
+            <div class="login-link">
+
+                Already have an account?
+
+                <a href="../login/login.html">
+                    Back to Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
