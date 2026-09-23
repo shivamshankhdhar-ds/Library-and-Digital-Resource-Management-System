@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | Athenaeum Library</title>
+
+    <link rel="stylesheet" href="student-dashboard.css">
+</head>
+
+<body>
+
+    <!-- ==================== MAIN LAYOUT ==================== -->
+
+    <div class="dashboard-layout">
+
+        <!-- ==================== SIDEBAR ==================== -->
+
+        <aside class="sidebar">
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+
+                <div class="logo-icon">
+                    <svg viewBox="0 0 64 64" aria-hidden="true">
+                        <path d="M10 13h18c5 0 8 2 9 5v34c-2-3-5-5-9-5H10V13z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="4"
+                            stroke-linejoin="round" />
+
+                        <path d="M54 13H36c-5 0-8 2-9 5v34c2-3 5-5 9-5h18V13z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="4"
+                            stroke-linejoin="round" />
+
+                        <path d="M32 18v34"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="4" />
+                    </svg>
+                </div>
+
+                <div class="logo-text">
+                    <h2>ATHENAEUM</h2>
+                    <span>LIBRARY PORTAL</span>
+                </div>
+
+            </div>
+
+
+            <!-- Student Profile -->
+            <div class="student-profile">
+
+                <div class="profile-avatar">
+                    S
+                </div>
+
+                <div class="profile-info">
+                    <h3>Student</h3>
+                    <p>Student Account</p>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-navigation">
+
+                <p class="nav-heading">MAIN MENU</p>
+
+                <a href="#dashboard" class="nav-item active">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 13h8V3H3v10zM13 21h8V11h-8v10zM13 3v6h8V3h-8zM3 21h8v-6H3v6z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+
+                <a href="#browse-books" class="nav-item">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="7"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8" />
+
+                            <path d="M16.5 16.5L21 21"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+
+                    <span>Browse Books</span>
+
+                </a>
+
+
+                <a href="#categories" class="nav-item">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 5h16M4 12h16M4 19h16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+
+                    <span>Categories</span>
+
+                </a>
+
+
+                <p class="nav-heading secondary-heading">MY LIBRARY</p>
+
+
+                <a href="#my-books" class="nav-item">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linejoin="round" />
+
+                            <path d="M7 20V6a2 2 0 0 0-2-2"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8" />
+                        </svg>
+                    </span>
+
+                    <span>My Books</span>
+
+                </a>
+
+
+                <a href="#issue-history" class="nav-item">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 5h16v14H4z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linejoin="round" />
+
+                            <path d="M8 9h8M8 13h5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+
+                    <span>Issue History</span>
+
+                </a>
+
+
+                <a href="#fines" class="nav-item">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="9"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8" />
+
+                            <path d="M12 7v10M15 9.5c-.7-1-1.7-1.5-3-1.5-1.7 0-3 1-3 2.3 0 3.4 6 1.7 6 5 0 1.3-1.3 2.2-3 2.2-1.3 0-2.4-.5-3.1-1.5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+
+                    <span>Fines</span>
+
+                </a>
+
+
+                <p class="nav-heading secondary-heading">ACCOUNT</p>
+
+
+                <a href="#profile" class="nav-item">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="3.5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8" />
+
+                            <path d="M5 20c.7-3.4 3.2-5.5 7-5.5s6.3 2.1 7 5.5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+
+                    <span>My Profile</span>
+
+                </a>
+
+
+                <a href="../../feature-login/login/login.html" class="nav-item logout-link">
+
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 5H5v14h5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <path d="M14 8l4 4-4 4M9 12h9"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                    <span>Logout</span>
+
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ==================== MAIN CONTENT ==================== -->
+
+        <main class="main-content">
+
+            <!-- Top Header -->
+            <header class="top-header">
+
+                <div class="header-title">
+
+                    <span class="page-label">
+                        LIBRARY PORTAL
+                    </span>
+
+                    <h1>Student Dashboard</h1>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <div class="notification">
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linejoin="round" />
+
+                            <path d="M10 21h4"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+
+                        <span class="notification-dot"></span>
+
+                    </div>
+
+
+                    <div class="header-user">
+
+                        <div class="header-avatar">
+                            S
+                        </div>
+
+                        <div>
+                            <strong>Student</strong>
+                            <span>Student Account</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Dashboard Content -->
+            <div class="content-wrapper">
+
+
+                <!-- Welcome Section -->
+                <section class="welcome-section">
+
+                    <div>
+
+                        <span class="welcome-label">
+                            STUDENT PORTAL
+                        </span>
+
+                        <h2>Welcome, Student</h2>
+
+                        <p>
+                            Search books, manage your issued books and keep track of your library activities.
+                        </p>
+
+                    </div>
+
+                    <div class="welcome-icon">
+
+                        <svg viewBox="0 0 80 80">
+                            <path d="M12 18h22c7 0 12 3 13 8v40c-3-5-7-7-13-7H12V18z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="3"
+                                stroke-linejoin="round" />
+
+                            <path d="M68 18H46c-7 0-12 3-13 8v40c3-5 7-7 13-7h22V18z"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="3"
+                                stroke-linejoin="round" />
+
+                            <path d="M40 26v40"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="3" />
+                        </svg>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================== OVERVIEW CARDS ==================== -->
+
+                <section class="stats-grid">
+
+
+                    <!-- Current Books -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4z"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8" />
+
+                                <path d="M7 20V6a2 2 0 0 0-2-2"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8" />
+                            </svg>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>Current Books</span>
+
+                            <strong>0</strong>
+
+                            <small>No books currently issued</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Due Books -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="8.5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8" />
+
+                                <path d="M12 7v5l3 2"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>Due Books</span>
+
+                            <strong>0</strong>
+
+                            <small>No books due for return</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Pending Fine -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon red">
+
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="8.5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8" />
+
+                                <path d="M12 7v10M15 9.5c-.7-1-1.7-1.5-3-1.5-1.7 0-3 1-3 2.3 0 3.4 6 1.7 6 5 0 1.3-1.3 2.2-3 2.2-1.3 0-2.4-.5-3.1-1.5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>Pending Fine</span>
+
+                            <strong>₹0</strong>
+
+                            <small>No pending fine</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Reading History -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 4h14v16H5z"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linejoin="round" />
+
+                                <path d="M8 8h8M8 12h8M8 16h5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>Books Read</span>
+
+                            <strong>0</strong>
+
+                            <small>No reading history available</small>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================== SEARCH BOOKS ==================== -->
+
+                <section class="dashboard-card browse-section" id="browse-books">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                LIBRARY COLLECTION
+                            </span>
+
+                            <h2>Browse & Search Books</h2>
+
+                            <p>
+                                Find books by title, author or category.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="search-area">
+
+                        <div class="search-box">
+
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="11" cy="11" r="7"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8" />
+
+                                <path d="M16.5 16.5L21 21"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </svg>
+
+                            <input
+                                type="text"
+                                placeholder="Search books by title, author or keyword">
+
+                        </div>
+
+
+                        <select class="category-select">
+
+                            <option value="">All Categories</option>
+
+                            <option value="computer-science">
+                                Computer Science
+                            </option>
+
+                            <option value="data-science">
+                                Data Science
+                            </option>
+
+                            <option value="artificial-intelligence">
+                                Artificial Intelligence
+                            </option>
+
+                            <option value="mathematics">
+                                Mathematics
+                            </option>
+
+                            <option value="management">
+                                Management
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+
+                        <button class="search-button">
+                            Search Books
+                        </button>
+
+                    </div>
+
+
+                    <div class="empty-state small-empty">
+
+                        <div class="empty-icon">
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4z"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7" />
+
+                                <path d="M7 20V6a2 2 0 0 0-2-2"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7" />
+                            </svg>
+
+                        </div>
+
+                        <h3>No books available</h3>
+
+                        <p>
+                            Books will appear here once they are added to the library collection.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================== TWO COLUMN AREA ==================== -->
+
+                <div class="two-column-layout">
+
+
+                    <!-- My Books -->
+                    <section class="dashboard-card" id="my-books">
+
+                        <div class="section-header compact">
+
+                            <div>
+
+                                <span class="section-label">
+                                    MY LIBRARY
+                                </span>
+
+                                <h2>My Books</h2>
+
+                            </div>
+
+                            <a href="#issue-history" class="view-link">
+                                View History
+                            </a>
+
+                        </div>
+
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4z"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7" />
+
+                                    <path d="M7 20V6a2 2 0 0 0-2-2"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7" />
+                                </svg>
+
+                            </div>
+
+                            <h3>No books issued</h3>
+
+                            <p>
+                                You do not have any books issued at the moment.
+                            </p>
+
+                            <a href="#browse-books" class="empty-action">
+                                Browse Books
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Recent Books -->
+                    <section class="dashboard-card" id="recent-books">
+
+                        <div class="section-header compact">
+
+                            <div>
+
+                                <span class="section-label">
+                                    ACTIVITY
+                                </span>
+
+                                <h2>Recent Books</h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 5h16v14H4z"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7" />
+
+                                    <path d="M8 9h8M8 13h5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+
+                            <h3>No recent books</h3>
+
+                            <p>
+                                Your recently viewed or issued books will appear here.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- ==================== CATEGORIES ==================== -->
+
+                <section class="dashboard-card" id="categories">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                EXPLORE
+                            </span>
+
+                            <h2>Book Categories</h2>
+
+                            <p>
+                                Browse the library collection by category.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-grid">
+
+                        <div class="category-card">
+
+                            <div class="category-icon">
+                                CS
+                            </div>
+
+                            <div>
+                                <h3>Computer Science</h3>
+                                <span>Books available: 0</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-card">
+
+                            <div class="category-icon">
+                                DS
+                            </div>
+
+                            <div>
+                                <h3>Data Science</h3>
+                                <span>Books available: 0</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-card">
+
+                            <div class="category-icon">
+                                AI
+                            </div>
+
+                            <div>
+                                <h3>Artificial Intelligence</h3>
+                                <span>Books available: 0</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-card">
+
+                            <div class="category-icon">
+                                MA
+                            </div>
+
+                            <div>
+                                <h3>Mathematics</h3>
+                                <span>Books available: 0</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-card">
+
+                            <div class="category-icon">
+                                MG
+                            </div>
+
+                            <div>
+                                <h3>Management</h3>
+                                <span>Books available: 0</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="category-card">
+
+                            <div class="category-icon">
+                                OT
+                            </div>
+
+                            <div>
+                                <h3>Other</h3>
+                                <span>Books available: 0</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================== ISSUE HISTORY ==================== -->
+
+                <section class="dashboard-card" id="issue-history">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                HISTORY
+                            </span>
+
+                            <h2>Issue History</h2>
+
+                            <p>
+                                Track your previous book issue and return activities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Book</th>
+                                    <th>Issue Date</th>
+                                    <th>Return Date</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td colspan="4">
+
+                                        <div class="table-empty">
+                                            No issue history available.
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================== FINES ==================== -->
+
+                <section class="dashboard-card" id="fines">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                ACCOUNT
+                            </span>
+
+                            <h2>Fine Details</h2>
+
+                            <p>
+                                Check any pending library fines and payment status.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fine-summary">
+
+                        <div class="fine-box">
+
+                            <span>Total Pending Fine</span>
+
+                            <strong>₹0</strong>
+
+                        </div>
+
+
+                        <div class="fine-box">
+
+                            <span>Pending Records</span>
+
+                            <strong>0</strong>
+
+                        </div>
+
+
+                        <div class="fine-status">
+
+                            <div class="status-check">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>No pending fines</strong>
+                                <span>Your account currently has no fine records.</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================== PROFILE ==================== -->
+
+                <section class="dashboard-card" id="profile">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                ACCOUNT
+                            </span>
+
+                            <h2>My Profile</h2>
+
+                            <p>
+                                View your student account information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-detail">
+
+                            <span>Full Name</span>
+                            <strong>Not available</strong>
+
+                        </div>
+
+
+                        <div class="profile-detail">
+
+                            <span>Enrollment ID</span>
+                            <strong>Not available</strong>
+
+                        </div>
+
+
+                        <div class="profile-detail">
+
+                            <span>College Email</span>
+                            <strong>Not available</strong>
+
+                        </div>
+
+
+                        <div class="profile-detail">
+
+                            <span>Account Type</span>
+                            <strong>Student</strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ==================== FOOTER ==================== -->
+
+                <footer class="dashboard-footer">
+
+                    <p>
+                        © 2026 Athenaeum Library. Library & Digital Resource Management System.
+                    </p>
+
+                    <span>
+                        Student Portal
+                    </span>
+
+                </footer>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
