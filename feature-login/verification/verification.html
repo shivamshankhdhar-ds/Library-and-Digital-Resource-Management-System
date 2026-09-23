@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verify Email | Library Portal</title>
+
+    <link rel="stylesheet" href="verification.css">
+</head>
+
+<body>
+
+    <main class="verification-page">
+
+        <div class="verification-card">
+
+            <!-- Header -->
+            <div class="card-header">
+
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+
+                        <rect x="3" y="5" width="18" height="14" rx="2"
+                            stroke="currentColor"
+                            stroke-width="1.7" />
+
+                        <path d="M4 7L12 13L20 7"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+
+                        <path d="M16 17L18 19L22 15"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+
+                    </svg>
+                </div>
+
+                <div>
+                    <span class="portal-label">LIBRARY PORTAL</span>
+
+                    <h1>Verify Your Email</h1>
+
+                    <p>Enter the verification code</p>
+                </div>
+
+            </div>
+
+
+            <!-- Information -->
+            <div class="info-box">
+
+                <p>
+                    We've sent a verification code to your registered
+                    college email address.
+                </p>
+
+            </div>
+
+
+            <!-- Verification Form -->
+            <form action="../reset-password/reset-password.html" method="get">
+
+                <div class="input-group">
+
+                    <label for="verification-code">
+                        Verification Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="verification-code"
+                        name="verification-code"
+                        class="code-input"
+                        placeholder="Enter 6-digit code"
+                        maxlength="6"
+                        inputmode="numeric"
+                        required>
+
+                </div>
+
+
+                <!-- Resend -->
+                <div class="resend">
+
+                    <span>Didn't receive the code?</span>
+
+                    <a href="#">
+                        Resend Code
+                    </a>
+
+                </div>
+
+
+                <!-- Verify Button -->
+                <button type="submit" class="verify-btn">
+
+                    Verify &amp; Continue
+
+                    <svg viewBox="0 0 24 24" fill="none">
+
+                        <path d="M5 12H19"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round" />
+
+                        <path d="M13 6L19 12L13 18"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round" />
+
+                    </svg>
+
+                </button>
+
+            </form>
+
+
+            <!-- Back -->
+            <div class="bottom-link">
+
+                <a href="../forgot-password/forgot-password.html">
+                    ← Back to Forgot Password
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
