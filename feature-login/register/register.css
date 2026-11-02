@@ -1,3 +1,4 @@
+
 :root {
     --navy: #0b1f33;
     --teal: #078c8c;
@@ -31,11 +32,9 @@ body {
 
 .register-page {
     min-height: 100vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 30px 20px;
 
     background:
@@ -55,11 +54,8 @@ body {
 .register-card {
     width: 100%;
     max-width: 520px;
-
     background: #ffffff;
-
     padding: 40px 43px 30px;
-
     border-radius: 18px;
 
     box-shadow:
@@ -76,16 +72,13 @@ body {
 .card-header {
     display: flex;
     align-items: center;
-
     gap: 16px;
-
     margin-bottom: 30px;
 }
 
 .card-icon {
     width: 52px;
     height: 52px;
-
     flex-shrink: 0;
 
     display: flex;
@@ -93,9 +86,7 @@ body {
     justify-content: center;
 
     color: var(--teal);
-
     background: #eaf7f7;
-
     border-radius: 12px;
 }
 
@@ -106,33 +97,24 @@ body {
 
 .portal-label {
     display: block;
-
     margin-bottom: 3px;
-
     color: var(--teal);
-
     font-size: 9px;
     font-weight: 700;
-
     letter-spacing: 2.5px;
 }
 
 .card-header h1 {
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 31px;
     font-weight: 400;
-
     line-height: 1.15;
-
     color: var(--navy);
 }
 
 .card-header p {
     margin-top: 4px;
-
     font-size: 12px;
-
     color: var(--muted);
 }
 
@@ -147,12 +129,9 @@ body {
 
 .input-group label {
     display: block;
-
     margin-bottom: 7px;
-
     font-size: 12px;
     font-weight: 600;
-
     color: #142d42;
 }
 
@@ -167,36 +146,28 @@ body {
 
 .input-wrapper svg {
     position: absolute;
-
     left: 15px;
     top: 50%;
-
     transform: translateY(-50%);
 
     width: 18px;
     height: 18px;
 
     color: #8093a1;
-
     pointer-events: none;
 }
 
 .input-wrapper input {
     width: 100%;
     height: 53px;
-
     padding: 0 15px 0 49px;
 
     border: 1px solid var(--border);
-
     border-radius: 10px;
-
     outline: none;
 
     background: #fbfcfd;
-
     color: var(--text);
-
     font-size: 13px;
 
     transition: 0.2s ease;
@@ -208,10 +179,59 @@ body {
 
 .input-wrapper input:focus {
     border-color: var(--teal);
-
     background: #ffffff;
 
-    box-shadow: 0 0 0 3px rgba(7, 140, 140, 0.08);
+    box-shadow:
+        0 0 0 3px rgba(7, 140, 140, 0.08);
+}
+
+
+/* =========================
+   RED VALIDATION MESSAGES
+========================= */
+
+.field-error {
+    display: block;
+    width: 100%;
+
+    margin-top: 6px;
+
+    color: #dc2626;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    animation: errorAppear 0.2s ease;
+}
+
+@keyframes errorAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-3px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Red border for invalid input */
+
+.input-invalid-wrapper input {
+    border-color: #dc2626 !important;
+
+    box-shadow:
+        0 0 0 2px rgba(220, 38, 38, 0.08);
+}
+
+.input-invalid-wrapper input:focus {
+    border-color: #dc2626 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(220, 38, 38, 0.10);
 }
 
 
@@ -222,6 +242,7 @@ body {
 .terms {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     gap: 9px;
 
@@ -233,33 +254,34 @@ body {
     height: 16px;
 
     margin-top: 1px;
-
     flex-shrink: 0;
 
     accent-color: var(--teal);
-
     cursor: pointer;
 }
 
 .terms label {
     font-size: 11px;
     line-height: 1.5;
-
     color: var(--muted);
-
     cursor: pointer;
 }
 
 .terms a {
     color: var(--teal);
-
     text-decoration: none;
-
     font-weight: 600;
 }
 
 .terms a:hover {
     text-decoration: underline;
+}
+
+/* Terms validation message */
+
+.terms .field-error {
+    flex-basis: 100%;
+    margin-top: 2px;
 }
 
 
@@ -275,7 +297,6 @@ body {
     border-radius: 10px;
 
     background: var(--navy);
-
     color: white;
 
     font-size: 14px;
@@ -299,11 +320,16 @@ body {
 
 .create-btn:hover {
     background: var(--teal);
-
     transform: translateY(-1px);
 
     box-shadow:
         0 8px 20px rgba(7, 140, 140, 0.18);
+}
+
+.create-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
 }
 
 
@@ -313,21 +339,15 @@ body {
 
 .login-link {
     text-align: center;
-
     margin-top: 22px;
-
     font-size: 12px;
-
     color: var(--muted);
 }
 
 .login-link a {
     color: var(--teal);
-
     font-weight: 600;
-
     text-decoration: none;
-
     margin-left: 4px;
 }
 
@@ -348,7 +368,6 @@ body {
 
     .register-card {
         padding: 30px 25px 25px;
-
         border-radius: 15px;
     }
 

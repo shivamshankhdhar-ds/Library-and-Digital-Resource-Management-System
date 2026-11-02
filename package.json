@@ -1,0 +1,32 @@
+{
+  "name": "library-and-digital-resource-management-system",
+  "version": "1.0.0",
+  "description": "Library and Digital Resource Management System - Group 14",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivamshankhdhar-ds/Library-and-Digital-Resource-Management-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shivamshankhdhar-ds/Library-and-Digital-Resource-Management-System/issues"
+  },
+  "homepage": "https://github.com/shivamshankhdhar-ds/Library-and-Digital-Resource-Management-System#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "nodemailer": "^10.3.1",
+    "pg": "^8.23.1"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  }
+}

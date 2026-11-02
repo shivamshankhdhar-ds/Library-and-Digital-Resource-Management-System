@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,27 +28,18 @@
         <!-- Background Overlay -->
         <div class="background-overlay"></div>
 
-
-        <!-- ================= MAIN CONTAINER ================= -->
-
+        <!-- MAIN CONTAINER -->
         <div class="login-container">
 
-
-            <!-- ================= LEFT SECTION ================= -->
-
+            <!-- LEFT SECTION -->
             <section class="welcome-section">
 
-
                 <!-- Brand -->
-
                 <div class="brand">
 
                     <div class="brand-icon">
 
-                        <svg
-                            viewBox="0 0 64 64"
-                            aria-hidden="true"
-                        >
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
 
                             <path
                                 d="M8 14C18 9 27 10 32 16V52C27 46 18 45 8 49V14Z"
@@ -75,7 +67,6 @@
 
                     </div>
 
-
                     <div class="brand-text">
 
                         <h2>
@@ -90,26 +81,20 @@
 
                 </div>
 
-
                 <!-- Gold Line -->
-
                 <div class="gold-line"></div>
 
-
                 <!-- Welcome Content -->
-
                 <div class="welcome-content">
 
                     <span class="welcome-label">
                         WELCOME TO YOUR DIGITAL LIBRARY
                     </span>
 
-
                     <h1>
                         Every book has a
                         <span>next reader.</span>
                     </h1>
-
 
                     <p>
                         Discover books, manage your reading activity,
@@ -121,22 +106,15 @@
 
             </section>
 
-
-            <!-- ================= LOGIN CARD ================= -->
-
+            <!-- LOGIN CARD -->
             <section class="login-card">
 
-
                 <!-- Login Header -->
-
                 <div class="login-header">
 
                     <div class="login-logo">
 
-                        <svg
-                            viewBox="0 0 64 64"
-                            aria-hidden="true"
-                        >
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
 
                             <path
                                 d="M8 15C18 10 27 11 32 17V52C27 47 18 46 8 50V15Z"
@@ -164,16 +142,13 @@
 
                     </div>
 
-
                     <span class="login-label">
                         LIBRARY PORTAL
                     </span>
 
-
                     <h2>
                         Welcome Back
                     </h2>
-
 
                     <p>
                         Sign in to access your library account
@@ -181,14 +156,10 @@
 
                 </div>
 
-
-                <!-- ================= ROLE LOGIN ================= -->
-
+                <!-- ROLE LOGIN -->
                 <div class="role-login">
 
-
                     <!-- Student -->
-
                     <input
                         type="radio"
                         name="login-role"
@@ -196,18 +167,14 @@
                         checked
                     >
 
-
                     <!-- Admin -->
-
                     <input
                         type="radio"
                         name="login-role"
                         id="admin-login"
                     >
 
-
                     <!-- Role Tabs -->
-
                     <div class="role-tabs">
 
                         <label for="student-login">
@@ -219,7 +186,6 @@
                             Student Login
 
                         </label>
-
 
                         <label for="admin-login">
 
@@ -233,22 +199,20 @@
 
                     </div>
 
-
-                    <!-- ================= STUDENT FORM ================= -->
-
+                    <!-- STUDENT FORM -->
                     <div class="login-form student-form">
 
-                        <form action="../../feature-student/student-dashboard/student-dashboard.html" method="get">
-
+                        <form
+                            id="student-login-form"
+                            novalidate
+                        >
 
                             <!-- Enrollment -->
-
                             <div class="input-group">
 
                                 <label for="enrollment">
                                     Enrollment ID
                                 </label>
-
 
                                 <div class="input-wrapper">
 
@@ -270,23 +234,20 @@
 
                                     </span>
 
-
                                     <input
                                         type="text"
                                         id="enrollment"
                                         name="enrollment"
                                         placeholder="Enter your enrollment ID"
                                         autocomplete="username"
-                                        required
+                                        maxlength="10"
                                     />
 
                                 </div>
 
                             </div>
 
-
-                            <!-- Password -->
-
+                            <!-- Student Password -->
                             <div class="input-group">
 
                                 <div class="password-row">
@@ -295,13 +256,7 @@
                                         Password
                                     </label>
 
-
-                                    <a href="../forgot-password/forgot-password.html">
-                                        Forgot Password?
-                                    </a>
-
                                 </div>
-
 
                                 <div class="input-wrapper">
 
@@ -325,16 +280,14 @@
 
                                     </span>
 
-
                                     <input
                                         type="password"
                                         id="student-password"
                                         name="password"
                                         placeholder="Enter your password"
                                         autocomplete="current-password"
-                                        required
+                                        maxlength="8"
                                     />
-
 
                                     <span class="eye-icon">
                                         ◉
@@ -344,13 +297,12 @@
 
                             </div>
 
-
-                            <!-- Remember -->
-
+                            <!-- Remember Me -->
                             <label class="remember">
 
                                 <input
                                     type="checkbox"
+                                    id="remember-student"
                                     name="remember"
                                 />
 
@@ -360,9 +312,7 @@
 
                             </label>
 
-
-                            <!-- Button -->
-
+                            <!-- Student Login Button -->
                             <button
                                 type="submit"
                                 class="login-button"
@@ -378,15 +328,12 @@
 
                             </button>
 
-
-                            <!-- ================= STUDENT REGISTER ================= -->
-
+                            <!-- Student Register -->
                             <div class="register-section">
 
                                 <span>
                                     Don't have a student account?
                                 </span>
-
 
                                 <a href="../register/register.html">
                                     Create an Account
@@ -399,22 +346,20 @@
 
                     </div>
 
-
-                    <!-- ================= ADMIN FORM ================= -->
-
+                    <!-- ADMIN FORM -->
                     <div class="login-form admin-form">
 
-                        <form action="../../feature-admin/admin/admin-dashboard.html" method="get">
-
+                        <form
+                            id="admin-login-form"
+                            novalidate
+                        >
 
                             <!-- Admin ID -->
-
                             <div class="input-group">
 
                                 <label for="admin-id">
                                     Admin ID
                                 </label>
-
 
                                 <div class="input-wrapper">
 
@@ -436,23 +381,19 @@
 
                                     </span>
 
-
                                     <input
                                         type="text"
                                         id="admin-id"
                                         name="admin-id"
                                         placeholder="Enter your admin ID"
                                         autocomplete="username"
-                                        required
                                     />
 
                                 </div>
 
                             </div>
 
-
                             <!-- Admin Password -->
-
                             <div class="input-group">
 
                                 <div class="password-row">
@@ -462,7 +403,6 @@
                                     </label>
 
                                 </div>
-
 
                                 <div class="input-wrapper">
 
@@ -486,16 +426,13 @@
 
                                     </span>
 
-
                                     <input
                                         type="password"
                                         id="admin-password"
                                         name="password"
                                         placeholder="Enter your admin password"
                                         autocomplete="current-password"
-                                        required
                                     />
-
 
                                     <span class="eye-icon">
                                         ◉
@@ -505,13 +442,12 @@
 
                             </div>
 
-
-                            <!-- Remember -->
-
+                            <!-- Admin Remember Me -->
                             <label class="remember">
 
                                 <input
                                     type="checkbox"
+                                    id="remember-admin"
                                     name="remember-admin"
                                 />
 
@@ -521,9 +457,7 @@
 
                             </label>
 
-
-                            <!-- Admin Button -->
-
+                            <!-- Admin Login Button -->
                             <button
                                 type="submit"
                                 class="login-button"
@@ -539,9 +473,7 @@
 
                             </button>
 
-
-                            <!-- ================= ADMIN INFORMATION ================= -->
-
+                            <!-- Admin Information -->
                             <div class="admin-note">
 
                                 Admin credentials are provided by the library authority.
@@ -559,6 +491,8 @@
         </div>
 
     </main>
+
+    <script src="login.js"></script>
 
 </body>
 

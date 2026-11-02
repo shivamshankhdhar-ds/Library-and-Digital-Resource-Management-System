@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Create Account | Library Portal</title>
-
     <link rel="stylesheet" href="register.css">
 </head>
 
@@ -20,19 +20,11 @@
 
                 <div class="card-icon">
                     <svg viewBox="0 0 24 24" fill="none">
-                        <circle cx="9" cy="8" r="4"
-                            stroke="currentColor"
-                            stroke-width="1.7"/>
-
+                        <circle cx="9" cy="8" r="4" stroke="currentColor" stroke-width="1.7"/>
                         <path d="M3 21C3 17.69 5.69 15 9 15"
-                            stroke="currentColor"
-                            stroke-width="1.7"
-                            stroke-linecap="round"/>
-
+                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                         <path d="M19 8V14M16 11H22"
-                            stroke="currentColor"
-                            stroke-width="1.7"
-                            stroke-linecap="round"/>
+                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                     </svg>
                 </div>
 
@@ -44,9 +36,9 @@
 
             </div>
 
-
             <!-- Registration Form -->
-                <form action="../account-created/account-created.html" method="get">
+            <form id="register-form" novalidate>
+
                 <!-- Full Name -->
                 <div class="input-group">
 
@@ -56,13 +48,9 @@
 
                         <svg viewBox="0 0 24 24" fill="none">
                             <circle cx="12" cy="8" r="4"
-                                stroke="currentColor"
-                                stroke-width="1.7"/>
-
+                                stroke="currentColor" stroke-width="1.7"/>
                             <path d="M4 21C4 17.69 7.58 15 12 15C16.42 15 20 17.69 20 21"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                                stroke-linecap="round"/>
+                                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                         </svg>
 
                         <input
@@ -70,12 +58,10 @@
                             id="full-name"
                             name="full-name"
                             placeholder="Enter your full name"
-                            required>
+                            autocomplete="name">
 
                     </div>
-
                 </div>
-
 
                 <!-- Enrollment ID -->
                 <div class="input-group">
@@ -86,13 +72,9 @@
 
                         <svg viewBox="0 0 24 24" fill="none">
                             <rect x="4" y="4" width="16" height="16" rx="2"
-                                stroke="currentColor"
-                                stroke-width="1.7"/>
-
+                                stroke="currentColor" stroke-width="1.7"/>
                             <path d="M8 8H16M8 12H13M8 16H11"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                                stroke-linecap="round"/>
+                                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                         </svg>
 
                         <input
@@ -100,12 +82,12 @@
                             id="enrollment-id"
                             name="enrollment-id"
                             placeholder="Enter your enrollment ID"
-                            required>
+                            inputmode="numeric"
+                            maxlength="10"
+                            autocomplete="off">
 
                     </div>
-
                 </div>
-
 
                 <!-- College Email -->
                 <div class="input-group">
@@ -116,14 +98,10 @@
 
                         <svg viewBox="0 0 24 24" fill="none">
                             <rect x="3" y="5" width="18" height="14" rx="2"
-                                stroke="currentColor"
-                                stroke-width="1.7"/>
-
+                                stroke="currentColor" stroke-width="1.7"/>
                             <path d="M4 7L12 13L20 7"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"/>
+                                stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
 
                         <input
@@ -131,12 +109,10 @@
                             id="email"
                             name="email"
                             placeholder="Enter your college email"
-                            required>
+                            autocomplete="email">
 
                     </div>
-
                 </div>
-
 
                 <!-- Password -->
                 <div class="input-group">
@@ -147,13 +123,9 @@
 
                         <svg viewBox="0 0 24 24" fill="none">
                             <rect x="4" y="10" width="16" height="11" rx="2"
-                                stroke="currentColor"
-                                stroke-width="1.7"/>
-
+                                stroke="currentColor" stroke-width="1.7"/>
                             <path d="M8 10V7C8 4.79 9.79 3 12 3C14.21 3 16 4.79 16 7V10"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                                stroke-linecap="round"/>
+                                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                         </svg>
 
                         <input
@@ -161,12 +133,12 @@
                             id="password"
                             name="password"
                             placeholder="Create a password"
-                            required>
+                            minlength="8"
+                            maxlength="8"
+                            autocomplete="new-password">
 
                     </div>
-
                 </div>
-
 
                 <!-- Confirm Password -->
                 <div class="input-group">
@@ -177,19 +149,12 @@
 
                         <svg viewBox="0 0 24 24" fill="none">
                             <rect x="4" y="10" width="16" height="11" rx="2"
-                                stroke="currentColor"
-                                stroke-width="1.7"/>
-
+                                stroke="currentColor" stroke-width="1.7"/>
                             <path d="M8 10V7C8 4.79 9.79 3 12 3C14.21 3 16 4.79 16 7V10"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                                stroke-linecap="round"/>
-
+                                stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                             <path d="M9 15L11 17L15 13"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"/>
+                                stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
 
                         <input
@@ -197,12 +162,12 @@
                             id="confirm-password"
                             name="confirm-password"
                             placeholder="Confirm your password"
-                            required>
+                            minlength="8"
+                            maxlength="8"
+                            autocomplete="new-password">
 
                     </div>
-
                 </div>
-
 
                 <!-- Terms and Privacy -->
                 <div class="terms">
@@ -210,8 +175,7 @@
                     <input
                         type="checkbox"
                         id="terms"
-                        name="terms"
-                        required>
+                        name="terms">
 
                     <label for="terms">
                         I agree to the Library
@@ -222,7 +186,6 @@
 
                 </div>
 
-
                 <!-- Create Account Button -->
                 <button type="submit" class="create-btn">
 
@@ -230,36 +193,27 @@
 
                     <svg viewBox="0 0 24 24" fill="none">
                         <path d="M5 12H19"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            stroke-linecap="round"/>
-
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                         <path d="M13 6L19 12L13 18"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"/>
+                            stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
 
                 </button>
 
             </form>
 
-
-            <!-- Back to Login -->
+            <!-- Login Link -->
             <div class="login-link">
-
                 Already have an account?
-
-                <a href="../login/login.html">
-                    Back to Login
-                </a>
-
+                <a href="../login/login.html">Back to Login</a>
             </div>
 
         </div>
 
     </main>
+
+    <script src="register.js"></script>
 
 </body>
 </html>

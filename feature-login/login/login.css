@@ -1264,3 +1264,37 @@ label[for="admin-login"] {
         font-size: 9px;
     }
 }
+
+/* =====================================
+   LOGIN FORM ERROR STYLING - FINAL FIX
+===================================== */
+
+.login-card .validation-error {
+    display: block !important;
+    width: 100% !important;
+    color: #dc2626 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    margin-top: 6px !important;
+    text-align: left !important;
+}
+
+.login-card .input-group input.input-error {
+    border: 1px solid #dc2626 !important;
+    background: #fffafa !important;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12) !important;
+}
+
+.login-card .input-group input.input-error:focus {
+    border-color: #dc2626 !important;
+}
+
+.login-card .remember-error {
+    display: block !important;
+    margin: 7px 0 12px !important;
+    color: #dc2626 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+}
